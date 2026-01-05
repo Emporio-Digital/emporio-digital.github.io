@@ -21,19 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtn = document.getElementById('open-ebooks');
     const closeBtn = document.getElementById('close-modal');
 
-    // Verifica se os elementos existem antes de adicionar o evento (evita erros)
+    // Funções para abrir/fechar com segurança
+    const openModal = () => {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Trava a rolagem do fundo
+    }
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Destrava a rolagem
+    }
+
     if(openBtn && modal && closeBtn) {
-        openBtn.addEventListener('click', () => {
-            modal.classList.add('active');
+        openBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
         });
 
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
+        closeBtn.addEventListener('click', closeModal);
 
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
-                modal.classList.remove('active');
+                closeModal();
             }
         });
     }
