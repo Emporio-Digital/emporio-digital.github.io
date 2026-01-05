@@ -92,7 +92,6 @@ body {
     object-fit: cover; border: 3px solid var(--bg-color);
 }
 
-/* TÍTULO COM FONTE ORBITRON */
 h1 { 
     font-family: 'Orbitron', sans-serif;
     font-size: 1.8rem; 
@@ -127,7 +126,7 @@ h1 {
 
 .card {
     display: flex; align-items: center; 
-    gap: 1.2rem;     
+    gap: 1rem;     
     padding: 1.5rem; 
     background: var(--card-bg);
     border: 1px solid var(--card-border);
@@ -148,23 +147,31 @@ h1 {
     box-shadow: 0 5px 20px rgba(189, 0, 255, 0.2);
 }
 
-/* ÁREA DO ÍCONE (AUMENTADA) */
+/* --- ALINHAMENTO --- */
+.card-icon, .card-icon-img {
+    width: 80px;  /* Largura fixa igual para todos */
+    height: 60px; /* Altura fixa */
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Ícones Phosphor */
 .card-icon {
-    font-size: 2.2rem; /* Aumentado de 1.8 para 2.2 */
+    font-size: 2.2rem; 
     color: #00c6ff; 
-    display: flex; align-items: center; justify-content: center;
-    width: 60px; /* Largura fixa maior */
 }
 
-/* ÁREA DA IMAGEM/LOGO (AUMENTADA) */
-.card-icon-img {
-    width: 60px; /* Aumentado de 45px para 60px */
-    height: 60px; 
-    display: flex; align-items: center; justify-content: center;
-}
-
+/* Imagens Normais */
 .card-icon-img img {
     width: 100%; height: 100%; object-fit: contain; border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* ZOOM SUAVE PARA KAIRÓS (LARGE) */
+/* Reduzido de 1.6 para 1.3 para equilibrar */
+.card-icon-img.large img {
+    transform: scale(1.3); 
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .card-content { flex: 1; }
