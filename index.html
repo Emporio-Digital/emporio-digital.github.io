@@ -3,115 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Central de soluções digitais: Apps, Sites e Consultoria.">
     
     <!-- Título da Aba -->
-    <title>Sócio Dev | Soluções Digitais</title>
+    <title>EG Empório Digital | Hub</title>
+    
+    <!-- Ícone da Aba (Favicon) - Vai puxar sua foto de perfil -->
+    <link rel="shortcut icon" href="perfil.jpg" type="image/x-icon">
 
-    <!-- Fontes do Google (Inter) -->
+    <!-- ========================================= -->
+    <!-- SEO & CARD DO WHATSAPP (CONFIGURADO)      -->
+    <!-- ========================================= -->
+    <meta property="og:title" content="EG Empório Digital | Soluções Tech">
+    <meta property="og:description" content="Criação de Sites, Apps, Ebooks e Gestão Inteligente. Acesse meu Hub.">
+    <!-- Link Oficial Curto -->
+    <meta property="og:url" content="https://emporio-digital.github.io/">
+    <meta property="og:type" content="website">
+    <!-- Imagem que aparece no WhatsApp -->
+    <meta property="og:image" content="https://emporio-digital.github.io/perfil.jpg">
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Ícones (Phosphor Icons - Leves e Modernos) -->
+    <!-- Ícones -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Nosso CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fundo com gradiente animado -->
-    <div class="background-glow"></div>
+    <!-- Fundo Centralizado -->
+    <div class="background-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
 
     <main class="container">
         
-        <!-- 1. HERO SECTION -->
+        <!-- HEADER -->
         <header class="profile-section fade-in">
             <div class="avatar-container">
-                <!-- SUBSTITUA O SRC PELA SUA FOTO -->
-                <img src="perfil.jpg" alt="Foto de Sócio" class="avatar">
+                <!-- SUA FOTO -->
+                <img src="perfil.jpg" alt="Foto de Perfil" class="avatar">
             </div>
+            
             <h1>EG Empório Digital</h1>
-            <p class="role">Senior Frontend & UI Designer</p>
-            <p class="bio">Transformo ideias complexas em experiências digitais de alta conversão.</p>
+            <p class="role">Soluções & Produtos Digitais</p>
+
+            <!-- ÍCONES SOCIAIS -->
+            <div class="social-icons-header">
+                <!-- Instagram -->
+                <a href="https://instagram.com/eg.emporio.digital" target="_blank">
+                    <i class="ph ph-instagram-logo"></i>
+                </a>
+                
+                <!-- WhatsApp (Início de conversa) -->
+                <a href="https://wa.me/5511916053292?text=Ol%C3%A1!%20Vim%20pelo%20seu%20link%20da%20bio." target="_blank">
+                    <i class="ph ph-whatsapp-logo"></i>
+                </a>
+                
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@seguindo_pela_fe" target="_blank">
+                    <i class="ph ph-tiktok-logo"></i>
+                </a>
+            </div>
         </header>
 
-        <!-- 2. SEÇÃO DE LINKS/PRODUTOS -->
+        <!-- SEÇÃO DE LINKS -->
         <section class="links-section">
             
-            <!-- Card 1: Ebook -->
-            <a href="#" class="card fade-in delay-1" target="_blank">
-                <div class="card-icon">
-                    <i class="ph ph-book-open-text"></i>
+            <!-- 1. KAIRÓS -->
+            <a href="https://kairos-agenda-inteligente.vercel.app/" class="card fade-in delay-1" target="_blank">
+                <div class="card-icon-img">
+                    <img src="kairos-logo.png" alt="Logo Kairós">
                 </div>
                 <div class="card-content">
-                    <h3>Ebook: Frontend Master</h3>
-                    <p>Guia completo do zero ao sênior</p>
+                    <h3>Kairós</h3>
+                    <p>Sua agenda inteligente</p>
                 </div>
                 <div class="card-arrow">
                     <i class="ph ph-caret-right"></i>
                 </div>
             </a>
 
-            <!-- Card 2: App -->
-            <a href="#" class="card fade-in delay-2" target="_blank">
-                <div class="card-icon">
-                    <i class="ph ph-rocket-launch"></i>
+            <!-- 2. FINANCE IA -->
+            <div class="card fade-in delay-2 disabled-card">
+                <div class="card-icon-img">
+                    <img src="logo-app.png" alt="Logo Finance">
                 </div>
                 <div class="card-content">
-                    <h3>App Finance AI</h3>
-                    <p>Gestão financeira com Inteligência Artificial</p>
+                    <h3>Finance IA</h3>
+                    <p>Gestão Inteligente</p>
                 </div>
-                <div class="card-arrow">
-                    <i class="ph ph-caret-right"></i>
-                </div>
-            </a>
+                <div class="badge">Em Breve</div>
+            </div>
 
-            <!-- Card 3: Serviços -->
-            <a href="#" class="card fade-in delay-3" target="_blank">
+            <!-- 3. CRIAÇÃO DE SITES (Venda) -->
+            <a href="https://wa.me/5511916053292?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fazer%20um%20Site%20Profissional." class="card fade-in delay-3" target="_blank">
                 <div class="card-icon">
                     <i class="ph ph-laptop"></i>
                 </div>
                 <div class="card-content">
-                    <h3>Landing Pages Premium</h3>
-                    <p>Solicite um orçamento para seu projeto</p>
+                    <h3>Criação de Sites e Páginas</h3>
+                    <p>Solicite seu orçamento agora</p>
                 </div>
                 <div class="card-arrow">
-                    <i class="ph ph-caret-right"></i>
+                    <i class="ph ph-whatsapp-logo"></i>
                 </div>
             </a>
 
-            <!-- Card 4: Portfólio -->
-            <a href="#" class="card fade-in delay-4" target="_blank">
+            <!-- 4. EBOOKS (Botão do Modal) -->
+            <button class="card fade-in delay-4" id="open-ebooks">
                 <div class="card-icon">
-                    <i class="ph ph-code"></i>
+                    <i class="ph ph-books"></i>
                 </div>
                 <div class="card-content">
-                    <h3>Meu Portfólio</h3>
-                    <p>Veja os projetos que já desenvolvi</p>
+                    <h3>Ebooks Digitais</h3>
+                    <p>Acesse a biblioteca completa</p>
                 </div>
                 <div class="card-arrow">
                     <i class="ph ph-caret-right"></i>
                 </div>
-            </a>
+            </button>
 
         </section>
 
-        <!-- 3. RODAPÉ / CTA -->
-        <footer class="fade-in delay-5">
-            <div class="social-icons">
-                <a href="#"><i class="ph ph-instagram-logo"></i></a>
-                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                <a href="#"><i class="ph ph-github-logo"></i></a>
-                <a href="#"><i class="ph ph-whatsapp-logo"></i></a>
-            </div>
-            <p>© 2024 Dev Solutions. Todos os direitos reservados.</p>
+        <!-- FOOTER -->
+        <footer class="fade-in delay-4">
+            <p>© 2024 EG Empório Digital. Todos os direitos reservados.</p>
         </footer>
 
     </main>
 
-    <!-- Nosso JS -->
+    <!-- MODAL EBOOKS -->
+    <div id="ebook-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn"><i class="ph ph-x"></i></button>
+            
+            <h2>📚 Biblioteca VIP</h2>
+            <p class="modal-subtitle">Conteúdo exclusivo:</p>
+
+            <div class="ebook-list">
+                
+                <!-- 👇 COLOQUE OS LINKS REAIS DOS SEUS EBOOKS AQUI 👇 -->
+                
+                <a href="#" class="ebook-item" target="_blank">
+                    <i class="ph ph-book-open-text"></i>
+                    <span>Ebook 01: Guia Inicial</span>
+                </a>
+                
+                <a href="#" class="ebook-item" target="_blank">
+                    <i class="ph ph-chart-line-up"></i>
+                    <span>Ebook 02: Estratégias</span>
+                </a>
+                
+                <a href="#" class="ebook-item" target="_blank">
+                    <i class="ph ph-brain"></i>
+                    <span>Ebook 03: Mentalidade</span>
+                </a>
+                
+                <a href="#" class="ebook-item" target="_blank">
+                    <i class="ph ph-currency-dollar"></i>
+                    <span>Ebook 04: Monetização</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

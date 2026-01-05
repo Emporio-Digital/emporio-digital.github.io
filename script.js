@@ -1,25 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todos os elementos que devem ser animados
+    
+    // Animação de entrada
     const elementsToAnimate = document.querySelectorAll('.fade-in');
-
-    // Configura o "Observador" (Intersection Observer)
-    // Ele avisa quando o elemento entra na tela
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            // Se o elemento está visível na tela
             if (entry.isIntersecting) {
-                // Adiciona a classe que faz ele aparecer
                 entry.target.classList.add('visible');
-                // Para de observar (anima só uma vez)
                 observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.1 // Dispara quando 10% do elemento estiver visível
-    });
+    }, { threshold: 0.1 });
 
-    // Manda o observador vigiar cada elemento
     elementsToAnimate.forEach(element => {
         observer.observe(element);
     });
+
+    // Lógica do Modal de Ebooks
+    const modal = document.getElementById('ebook-modal');
+    const openBtn = document.getElementById('open-ebooks');
+    const closeBtn = document.getElementById('close-modal');
+
+    // Verifica se os elementos existem antes de adicionar o evento (evita erros)
+    if(openBtn && modal && closeBtn) {
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    }
 });
