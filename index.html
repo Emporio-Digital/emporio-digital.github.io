@@ -6,30 +6,27 @@
     
     <title>EG Empório Digital | Hub</title>
     
-    <!-- Ícone da Aba (Puxa sua foto) -->
+    <!-- Ícone da Aba -->
     <link rel="shortcut icon" href="perfil.jpg" type="image/x-icon">
 
-    <!-- SEO & CARD DO WHATSAPP -->
+    <!-- SEO -->
     <meta property="og:title" content="EG Empório Digital">
     <meta property="og:description" content="Soluções Digitais e Produtos Exclusivos.">
     <meta property="og:url" content="https://emporio-digital.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://emporio-digital.github.io/perfil.jpg">
 
-    <!-- Fontes -->
+    <!-- Fontes e Ícones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Ícones -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fundo Centralizado -->
+    <!-- Fundo Centralizado (VOLTOU AO ORIGINAL ANIMADO) -->
     <div class="background-animation">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
@@ -47,16 +44,13 @@
             <h1>EG Empório Digital</h1>
             <p class="role">Soluções & Produtos Digitais</p>
 
-            <!-- ÍCONES SOCIAIS -->
             <div class="social-icons-header">
                 <a href="https://instagram.com/eg.emporio.digital" target="_blank">
                     <i class="ph ph-instagram-logo"></i>
                 </a>
-                
                 <a href="https://wa.me/5511916053292?text=Ol%C3%A1!%20Vim%20pelo%20seu%20link%20da%20bio." target="_blank">
                     <i class="ph ph-whatsapp-logo"></i>
                 </a>
-                
                 <a href="https://tiktok.com/@seguindo_pela_fe" target="_blank">
                     <i class="ph ph-tiktok-logo"></i>
                 </a>
@@ -66,7 +60,6 @@
         <!-- SEÇÃO DE LINKS -->
         <section class="links-section">
             
-            <!-- 1. KAIRÓS -->
             <a href="https://kairos-agenda-inteligente.vercel.app/" class="card fade-in delay-1" target="_blank">
                 <div class="card-icon-img">
                     <img src="kairos-logo.png" alt="Logo Kairós">
@@ -75,12 +68,9 @@
                     <h3>Kairós</h3>
                     <p>Sua agenda inteligente</p>
                 </div>
-                <div class="card-arrow">
-                    <i class="ph ph-caret-right"></i>
-                </div>
+                <div class="card-arrow"><i class="ph ph-caret-right"></i></div>
             </a>
 
-            <!-- 2. FINANCE IA -->
             <div class="card fade-in delay-2 disabled-card">
                 <div class="card-icon-img">
                     <img src="logo-app.png" alt="Logo Finance">
@@ -92,32 +82,22 @@
                 <div class="badge">Em Breve</div>
             </div>
 
-            <!-- 3. CRIAÇÃO DE SITES -->
             <a href="https://wa.me/5511916053292?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fazer%20um%20Site%20Profissional." class="card fade-in delay-3" target="_blank">
-                <div class="card-icon">
-                    <i class="ph ph-laptop"></i>
-                </div>
+                <div class="card-icon"><i class="ph ph-laptop"></i></div>
                 <div class="card-content">
                     <h3>Criação de Sites e Páginas</h3>
                     <p>Solicite seu orçamento agora</p>
                 </div>
-                <div class="card-arrow">
-                    <i class="ph ph-whatsapp-logo"></i>
-                </div>
+                <div class="card-arrow"><i class="ph ph-whatsapp-logo"></i></div>
             </a>
 
-            <!-- 4. EBOOKS (Botão do Modal) -->
             <button class="card fade-in delay-4" id="open-ebooks">
-                <div class="card-icon">
-                    <i class="ph ph-books"></i>
-                </div>
+                <div class="card-icon"><i class="ph ph-books"></i></div>
                 <div class="card-content">
                     <h3>Ebooks Digitais</h3>
                     <p>Acesse a biblioteca completa</p>
                 </div>
-                <div class="card-arrow">
-                    <i class="ph ph-caret-right"></i>
-                </div>
+                <div class="card-arrow"><i class="ph ph-caret-right"></i></div>
             </button>
 
         </section>
@@ -129,7 +109,7 @@
 
     </main>
 
-    <!-- MODAL EBOOKS -->
+    <!-- MODAL EBOOKS (ATUALIZADO COM SUBTÍTULOS) -->
     <div id="ebook-modal" class="modal-overlay">
         <div class="modal-content">
             <button id="close-modal" class="close-btn"><i class="ph ph-x"></i></button>
@@ -139,28 +119,40 @@
 
             <div class="ebook-list">
                 
-                <!-- EBOOK 1: Saúde Financeira -->
+                <!-- EBOOK 1 -->
                 <a href="https://go.hotmart.com/C103670666I" class="ebook-item" target="_blank">
-                    <i class="ph ph-currency-dollar"></i>
-                    <span>Saúde Financeira na Prática</span>
+                    <div class="ebook-icon"><i class="ph ph-currency-dollar"></i></div>
+                    <div class="ebook-info">
+                        <span class="ebook-title">Saúde Financeira na Prática</span>
+                        <span class="ebook-desc">Organize, economize e multiplique</span>
+                    </div>
                 </a>
                 
-                <!-- EBOOK 2: Leveza -->
+                <!-- EBOOK 2 -->
                 <a href="https://go.hotmart.com/X102588332N" class="ebook-item" target="_blank">
-                    <i class="ph ph-feather"></i>
-                    <span>Viver com Mais Leveza</span>
+                    <div class="ebook-icon"><i class="ph ph-feather"></i></div>
+                    <div class="ebook-info">
+                        <span class="ebook-title">Viver com Mais Leveza</span>
+                        <span class="ebook-desc">Guia prático para quem tem ansiedade</span>
+                    </div>
                 </a>
                 
-                <!-- EBOOK 3: Sabor -->
+                <!-- EBOOK 3 -->
                 <a href="https://go.hotmart.com/C102556965T?dp=1" class="ebook-item" target="_blank">
-                    <i class="ph ph-cooking-pot"></i>
-                    <span>Sabor que Cuida</span>
+                    <div class="ebook-icon"><i class="ph ph-cooking-pot"></i></div>
+                    <div class="ebook-info">
+                        <span class="ebook-title">Sabor que Cuida</span>
+                        <span class="ebook-desc">Receitas saborosas para diabéticos</span>
+                    </div>
                 </a>
                 
-                <!-- EBOOK 4: Sono -->
+                <!-- EBOOK 4 -->
                 <a href="https://go.hotmart.com/K102552822J" class="ebook-item" target="_blank">
-                    <i class="ph ph-moon-stars"></i>
-                    <span>Durma Melhor, Viva Melhor</span>
+                    <div class="ebook-icon"><i class="ph ph-moon-stars"></i></div>
+                    <div class="ebook-info">
+                        <span class="ebook-title">Durma Melhor, Viva Melhor</span>
+                        <span class="ebook-desc">Método auxiliar contra insônia</span>
+                    </div>
                 </a>
 
             </div>

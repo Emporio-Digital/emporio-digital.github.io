@@ -21,15 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtn = document.getElementById('open-ebooks');
     const closeBtn = document.getElementById('close-modal');
 
-    // Funções para abrir/fechar com segurança
     const openModal = () => {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Trava a rolagem do fundo
+        document.body.style.overflow = 'hidden'; 
     }
 
     const closeModal = () => {
         modal.classList.remove('active');
-        document.body.style.overflow = ''; // Destrava a rolagem
+        document.body.style.overflow = ''; 
     }
 
     if(openBtn && modal && closeBtn) {
