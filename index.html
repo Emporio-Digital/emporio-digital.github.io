@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>EG Empório Digital | Hub</title>
+    <title>EG Empório Digital</title>
     
     <!-- Ícone da Aba -->
     <link rel="shortcut icon" href="perfil.jpg" type="image/x-icon">
@@ -25,6 +25,54 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- ESTILOS EXTRAS -->
+    <style>
+        body {
+            /* SALVE SUA IMAGEM NA PASTA COM O NOME: fundo.jpg */
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            /* Fundo escuro levemente transparente */
+            background: rgba(10, 10, 10, 0.85);
+            min-height: 100vh;
+        }
+
+        /* CORREÇÃO DO LOGO (NITIDEZ E DESTAQUE) */
+        .avatar {
+            filter: contrast(1.15) brightness(1.1); 
+            border: 2px solid #00f3ff; 
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+            image-rendering: -webkit-optimize-contrast;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Forçar Neon Azul nos Cards Principais */
+        .card {
+            border: 1px solid #00f3ff !important; 
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.3) !important; 
+        }
+
+        .card:hover {
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.6) !important;
+        }
+
+        /* CORREÇÃO: ÍCONES DENTRO DOS CARDS (SETAS) FICAM BRANCOS */
+        .card-arrow {
+            color: #ffffff !important;
+        }
+
+        /* CORREÇÃO: NEON AZUL TAMBÉM NO MODAL (JANELA DE EBOOKS) */
+        .modal-content {
+            border: 1px solid #00f3ff !important;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.4) !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -47,12 +95,22 @@
             <p class="role">Soluções & Produtos Digitais</p>
 
             <div class="social-icons-header">
-                <a href="https://instagram.com/eg.emporio.digital" target="_blank">
-                    <i class="ph ph-instagram-logo"></i>
+                <!-- 1. SITE -->
+                <a href="https://egemporiodigital.com.br" target="_blank">
+                    <i class="ph ph-globe"></i>
                 </a>
+
+                <!-- 2. WHATSAPP -->
                 <a href="https://wa.me/5511916053292?text=Ol%C3%A1!%20Vim%20pelo%20seu%20link%20da%20bio." target="_blank">
                     <i class="ph ph-whatsapp-logo"></i>
                 </a>
+
+                <!-- 3. INSTAGRAM -->
+                <a href="https://instagram.com/eg.emporio.digital" target="_blank">
+                    <i class="ph ph-instagram-logo"></i>
+                </a>
+                
+                <!-- 4. TIKTOK -->
                 <a href="https://tiktok.com/@seguindo_pela_fe" target="_blank">
                     <i class="ph ph-tiktok-logo"></i>
                 </a>
